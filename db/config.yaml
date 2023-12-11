@@ -1,0 +1,14 @@
+driver: postgresql+psycopg2
+host: localhost
+port: 5432
+
+database:
+  name: dismissal_prediction_service
+  schema: mail_service
+  tables: [employee, mail]
+
+dataset:
+  name: "enron-email-dataset"
+  file: "emails.csv"
+  url: "https://www.kaggle.com/datasets/wcukierski/enron-email-dataset"
+  dir: "."
