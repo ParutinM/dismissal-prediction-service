@@ -33,12 +33,19 @@ All dependencies will be downloaded
 As database this project uses `PostgresSQL`. To download it use the instruction 
 from [official website](https://www.postgresql.org/download/).
 
-After downloading it run `./db/create_db.py` to create database.
+After downloading it run 
+```shell
+python /db/create_db.py
+``` 
+to create database.
 
 If you want to fill it with [Enron Email Dataset](https://www.kaggle.com/datasets/wcukierski/enron-email-dataset), 
-which was used to train model, run `./db/scrap_enron_email_dataset.py`
+which was used to train model, run 
+```shell
+python /db/scrap_enron_email_dataset.py
+```
 
-**Note:** To download from Kaggle you need to put in `./db` your private key `kaggle.json`. 
+**Note:** To download from Kaggle you need to put in `/db` your private key `kaggle.json`. 
 It should look like:
 ```json
 {"username":"your_kaggle_username","key":"your_kaggle_key"}
